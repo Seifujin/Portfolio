@@ -1,0 +1,46 @@
+*{ /*affecte tout les éléments ici présent*/
+margin: 0;
+padding: 0;
+
+}
+
+body { /*configuration de la page web*/
+ font-family:"trebuchet ms",sans-serif;
+ font-size:75%;
+ width: 100%;
+ height: 100%;
+ }
+form { /*configuration de la zone du Formulaire*/
+ padding:5%;
+ width:20vw;
+ }
+fieldset {
+ padding: 5%;
+ margin-bottom:5%;
+ border:1px solid blue;
+ }
+legend {
+ color: red;
+ font-weight:bold
+ }
+label {
+ margin-top:1%;
+ display:block;
+ }
+label.inline {
+ display:inline;
+ margin-right:5%;
+ }
+input, textarea, select, option {
+ background-color: white;
+ }
+input, textarea, select {
+ padding:3px;
+ border:1px solid blue;
+ border-radius:1em;
+ width:200px;
+ box-shadow:1px 1px 2px grey inset;
+ }
+select {
+ margin-top:10px;
+ }

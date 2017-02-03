@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+
+  font-family: Times;
+  font-size: 30px;
+  color: #FFF;
+  text-align: center;
+}
+
+.loadzone{
+  background-color: #16a085;
+  height: 100%;
+  line-height: 500px;
+
+}
+
+.loader{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+
+.loader1{ /*loader circulaire*/
+border-radius: 50px;
+border: 6px solid rgba(255, 255, 255, 0.4); /* rgba + opacité de 0.4 % */
+
+}
+
+.loader1:after{ /*création d'un pseudo-élément par-dessus le loader circulaire*/
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -6px;   /* ajustement du loader*/
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid transparent; /*rendre le loader transparent*/
+  border-top-color: #FFF; /* on applique la couleur blanche juste en haut du loader*/
+  -webkit-animation: tournant 1s linear infinite; /* nom de l'animation, sa durée, fonction de l'anim et le nombre d'itération*/
+}
+
+@-webkit-keyframes tournant{
+  0%{ -webkit-transform : rotate(0deg);}
+  100%{ -webkit-transform: rotate(360deg);}
+}

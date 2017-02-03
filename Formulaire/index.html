@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <title>Type de Formulaire</title>
+  </head>
+  <body>
+
+<form method="post" action="index.php">
+
+
+
+<fieldset>
+ <legend>Vos coordonnées :</legend>
+
+
+<br><label class ="intitultext">Sexe :</label></br>
+<input type="radio" name="sexe" value=" M " /> M
+<input type="radio" name="sexe" value=" F " /> F
+
+ <p>
+    <br><label for="Nom">Nom :</label>
+    <input type="text" name="Nom" id="Nom" size ="25" maxlenght="15"/></br>
+    </p>
+
+    <p>
+      <br><label for="Prénom">Prénom :</label>
+      <input type="text" name="Prénom" id="Prénom" size ="25" maxlenght="15"/></br>
+    </p>
+
+    <p>
+      <br><label for="âge">Votre âge :</label>
+      <input type="number" name="âge" id="âge" min="5" max="99"/></br>
+    </p>
+
+    <p>
+     <br><label for="pseudo">Pseudo:</label>
+    <input type="text" name="pseudo" id="pseudo" size="25" maxlenght="15"/></br>
+   </p>
+
+    <p>
+     <br><label for="email">Courriel :</label>
+    <input type="email" name="mail" id="email" size="20" maxlenght="40"/></br>
+    </p>
+
+     <p>
+     <br><label for="mdp">Mot de passe :</label>
+     <input type="password" name="mdp" id="mdp" size="25" maxlenght="15"/></br>
+    </p>
+
+    <p>
+    <br><label for="mdp1">Confirmer votre mot de passe :</label>
+    <input type="password" name="mdp1" id="mdp1" size="25" maxlenght="15"/></br>
+   </p>
+
+   <label for="comments">Commentaire:</label>
+   <textarea name="comments" id="comments" cols="20" rows="4">
+   </textarea>
+
+</fieldset>
+
+ <p>
+ <input type="submit" value="Envoyer" />
+ <input type="reset" value="Annuler" />
+ </p>
+
+</form>
+</div>
